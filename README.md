@@ -135,3 +135,7 @@ flowchart LR
 - Database migrations are not configured yet; startup uses SQLAlchemy metadata creation.
 - Authentication and authorization are not implemented.
 - The generated frontend is experimental and not part of the backend-only production freeze.
+
+## Failure Mode Validation
+
+Failure mode tested: requests for nonexistent incident IDs return HTTP 404 instead of returning invalid data or modifying persisted state. Failure-path validation is included alongside incident creation, triage workflow, and benchmark verification.
