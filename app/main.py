@@ -7,12 +7,15 @@ from app.database import Base, engine, get_db
 from app import service
 from app.schemas import IncidentCreate, IncidentResponse
 
-Base.metadata.create_all(bind=engine)
-
 app = FastAPI(
     title="AI Incident Triage Engine",
     version="1.0.0",
 )
+
+
+@app.on_event("startup")
+def create_tables():
+    Base.metadata.create_all(bind=engine)
 
 
 @app.get("/")

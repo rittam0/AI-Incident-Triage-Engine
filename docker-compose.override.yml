@@ -1,0 +1,10 @@
+services:
+  frontend:
+    build:
+      context: ./frontend
+    environment:
+      INTERNAL_API_URL: http://api:8000
+    ports:
+      - "3000:3000"
+    depends_on:
+      - api
