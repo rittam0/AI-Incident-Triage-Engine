@@ -2,7 +2,7 @@
 
 import { useRouter } from "next/navigation";
 import { FormEvent, useState } from "react";
-import { createIncident } from "@/lib/api";
+import { createIncident } from "../lib/api";
 
 export function CreateIncidentForm() {
   const router = useRouter();

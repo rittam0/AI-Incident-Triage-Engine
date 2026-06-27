@@ -1,4 +1,4 @@
-import { IncidentDetail } from "@/components/IncidentDetail";
+import { IncidentDetail } from "../../../components/IncidentDetail";
 
 export default async function IncidentPage({
   params,

@@ -3,13 +3,13 @@
 import Link from "next/link";
 import { useSearchParams } from "next/navigation";
 import { useEffect, useState } from "react";
-import { getIncident, resolveIncident, triageIncident } from "@/lib/api";
+import { getIncident, resolveIncident, triageIncident } from "../lib/api";
 import {
   formatDate,
   priorityFor,
   recommendationFor,
-} from "@/lib/incident";
-import type { Incident } from "@/lib/types";
+} from "../lib/incident";
+import type { Incident } from "../lib/types";
 import { StatusBadge } from "./StatusBadge";
 
 export function IncidentDetail({ id }: { id: string }) {

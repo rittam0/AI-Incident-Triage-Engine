@@ -2,9 +2,9 @@
 
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import { listIncidents } from "@/lib/api";
-import { formatDate, priorityFor } from "@/lib/incident";
-import type { Incident } from "@/lib/types";
+import { listIncidents } from "../lib/api";
+import { formatDate, priorityFor } from "../lib/incident";
+import type { Incident } from "../lib/types";
 import { StatusBadge } from "./StatusBadge";
 
 export function IncidentTable() {

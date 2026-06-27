@@ -1,4 +1,4 @@
-import { CreateIncidentForm } from "@/components/CreateIncidentForm";
+import { CreateIncidentForm } from "../../../components/CreateIncidentForm";
 
 export default function NewIncidentPage() {
   return (

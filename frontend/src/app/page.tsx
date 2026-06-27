@@ -1,4 +1,4 @@
-import { IncidentTable } from "@/components/IncidentTable";
+import { IncidentTable } from "../components/IncidentTable";
 
 export default function DashboardPage() {
   return (
